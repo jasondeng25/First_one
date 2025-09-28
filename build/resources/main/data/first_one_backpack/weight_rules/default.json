@@ -1,0 +1,32 @@
+[
+  {
+    "priority": 1000,
+    "match": { "tagsAny": ["minecraft:logs", "minecraft:planks", "minecraft:wooden_stairs", "minecraft:wooden_slabs"] },
+    "assign": { "mass": 0.6, "vol": 0.7, "form": "wood" }
+  },
+  {
+    "priority": 990,
+    "match": { "tagsAny": ["minecraft:stone_crafting_materials", "minecraft:stone_tool_materials"] },
+    "assign": { "mass": 1.6, "vol": 1.0, "form": "stone" }
+  },
+  {
+    "priority": 980,
+    "match": { "pathRegex": ".*_ore$" },
+    "assign": { "mass": 3.0, "vol": 1.2, "form": "ore" }
+  },
+  {
+    "priority": 970,
+    "match": { "pathRegex": ".*_ingot$|.*_nugget$|.*_block$" },
+    "assign": { "mass": 7.8, "vol": 1.0, "form": "metal" }
+  },
+  {
+    "priority": 960,
+    "match": { "nameContains": ["sword","axe","pickaxe","shovel","hoe"] },
+    "assign": { "mass": 2.0, "vol": 0.8, "form": "tool" }
+  },
+  {
+    "priority": 950,
+    "match": { "namespaceAny": ["minecraft","*"] },
+    "assign": { "mass": 0.3, "vol": 0.3, "form": "misc" }
+  }
+]
