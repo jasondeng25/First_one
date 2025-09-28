@@ -51,6 +51,6 @@ public class WeightsReload implements PreparableReloadListener {
 
             LOGGER.info("[WeightsReload] finished. total={}", WeightRegistry.size());
             return null;
-        }, exec1).thenCompose(barrier::wait);
+        }, exec1).thenCompose(v -> barrier.wait(v));
     }
 }
