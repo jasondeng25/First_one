@@ -6,6 +6,7 @@ import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.util.profiling.ProfilerFiller;
 import net.minecraftforge.event.AddReloadListenerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import org.slf4j.Logger;
 
 import java.util.concurrent.CompletableFuture;
@@ -18,6 +19,7 @@ import java.util.concurrent.Executor;
  * 3) 扫描配方并推测重量（最高优先级，覆盖）
  * 4) 加载手写条目（仅补洞，不覆盖）
  */
+@Mod.EventBusSubscriber(modid = WeightsReload.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class WeightsReload implements PreparableReloadListener {
 
     public static final String MODID = "first_one_backpack";
@@ -49,6 +51,6 @@ public class WeightsReload implements PreparableReloadListener {
 
             LOGGER.info("[WeightsReload] finished. total={}", WeightRegistry.size());
             return null;
-        }, exec1).thenCompose(barrier::wait);
+        }, exec1).thenCompose(v -> barrier.wait(v));
     }
 }
