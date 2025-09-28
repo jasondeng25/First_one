@@ -1,0 +1,28 @@
+{
+  "materials": {
+    "wood": {
+      "mass": 0.4,
+      "vol": 1.0
+    },
+    "stone": {
+      "mass": 1.2,
+      "vol": 1.0
+    },
+    "iron": {
+      "mass": 7.8,
+      "vol": 1.0
+    },
+    "gold": {
+      "mass": 19.3,
+      "vol": 1.0
+    },
+    "leather": {
+      "mass": 0.9,
+      "vol": 1.0
+    },
+    "string": {
+      "mass": 0.1,
+      "vol": 1.0
+    }
+  }
+}
