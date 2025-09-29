@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)" # Forge 1.20.1 = 47.x
+license="MIT"
+
+[[mods]]
+modId="first_one_backpack"
+version="1.0.0"
+displayName="First One Backpack (Weights Fix)"
+authors="Yihang"
+description='''
+Backpack weight rules fix and tweaks.
+'''
+
+# 依赖（按需保留/调整）
+[[dependencies.first_one_backpack]]
+modId="forge"
+mandatory=true
+versionRange="[47.3.0,48)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.first_one_backpack]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
