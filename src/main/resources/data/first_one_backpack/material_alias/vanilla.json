@@ -1,0 +1,15 @@
+{
+  "item_to_material": {
+    "minecraft:stick": "wood",
+    "minecraft:string": "string",
+    "minecraft:leather": "leather",
+    "minecraft:cobblestone": "stone",
+    "minecraft:iron_ingot": "iron",
+    "minecraft:gold_ingot": "gold"
+  },
+  "tag_to_material": {
+    "minecraft:planks": "wood",
+    "minecraft:stone_tool_materials": "stone",
+    "forge:ingots/iron": "iron"
+  }
+}
