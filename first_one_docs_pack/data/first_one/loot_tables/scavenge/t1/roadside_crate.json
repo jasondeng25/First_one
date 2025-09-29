@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:chest",
-  "cooldown": 12000,
-  "noise": 0.35,
-  "heatWeight": 1.2,
-  "pools": []
-}
